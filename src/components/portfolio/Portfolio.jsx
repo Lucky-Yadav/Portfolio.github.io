@@ -1,6 +1,6 @@
 import React from 'react';
-import IMG1 from '../../assets/Nykaa.png';
-import IMG2 from "../../assets/UnsplashNav.png"
+import IMG1 from '../../assets/swiggy.png';
+import IMG2 from "../../assets/images/portfolio/Unsplash.png";
 
 
 import './portfolio.css';
@@ -9,25 +9,24 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: 'Nykaa Clone',
+      title: "Swiggy Clone",
       img: IMG1,
-      des:"Nykaa is an e-commerce website for beauty and Fashion Products.",
-      res:"My area of responsibility was to create REST Api for authentication and also to create frontend for the same while handling different errors and also to implement Googel oAuth2.",
-      teckStack:" React | Redux | Express | MongoDB |  Material UI ",
-      link: 'https://nykaa-web-app.netlify.app/',
-      github: 'https://github.com/tushar-1910/nykaa-clone',
+      des: "Swiggy is an Indian online food ordering and delivery platform .",
+      res: "My Area of Responsibility :- Create Signup/ Login Algo and also implemented Google oAuth with Mobile No. for Login and stored the data in JSON SERVER.",
+      teckStack: " React | Redux | Styled Components |  Material UI ",
+      link: "https://lucky-yadav.github.io/swiggy.com_clone.github.io/",
+      github: "https://github.com/Lucky-Yadav/swiggy.com_clone.github.io",
     },
     {
       id: 2,
-      title: 'Unsplash Nav Clone',
-      des:"This is Unsplash Navbar with Login / SignUp and also have Google oAuth for Login.",
+      title: "Unsplash Landing Page Clone",
+      des: "This is Unsplash's Landing page for website,with photos download, add them to favourite and profile card features",
       img: IMG2,
-      res:"Its feature includes - Drag and Drop search from which a user could search different wallpapers by just dragging or uploading image.",
-      teckStack:" React | Redux | Json-Server | Material UI",
-      link: 'https://unsplashnav.netlify.app/',
-      github: 'https://github.com/Parag-Tharani/Unsplash_clone',
-    }
-    
+      res: "Its feature includes - Drag and Drop search from which a user could search different wallpapers by just dragging or uploading image. ",
+      teckStack: " React | Redux | Styled Components | Material UI",
+      link: "https://unsplashnav.netlify.app/",
+      github: "https://github.com/Parag-Tharani/Unsplash_clone",
+    },
   ];
   
 
