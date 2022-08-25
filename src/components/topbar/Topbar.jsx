@@ -12,15 +12,117 @@ import './topbar.css';
 
 const Topbar = () => {
   const [activeNav, setActiveNav] = useState('#home');
+  const [stickynav, setstickynav] = useState('true')
+
+  var timeout;
+
+  document.onmousemove = function () {
+    if (timeout <= 1000) {
+        setstickynav("false")
+      }
+      clearTimeout(timeout);
+    
+    
+    timeout = setTimeout(() => {
+        setstickynav("true")
+    }, 4000);
+  };
+     
+  
   return (
-    <nav>
-      <a href="#home" onClick={()=> setActiveNav('#home')} className={activeNav === '#home' ? 'active' : ''}><AiOutlineHome size={30} /></a>
-      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser size={30} /></a>
-      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook size={30} /></a>
-      <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><VscProject size={30} /></a>
-      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><RiContactsBookLine  size={30} /></a>
-    </nav>
-  )
+    <>
+      <nav
+        onMouseEnter={() => setstickynav("true")}
+        onMouseLeave={() => setstickynav("false")}
+        className="navb"
+      >
+        <a
+          href="#home"
+          onClick={() => setActiveNav("#home")}
+          className={activeNav === "#home" ? "active" : ""}
+        >
+          <p className="p2">HOME</p>
+          <AiOutlineHome size={25} />
+        </a>
+        <a
+          href="#about"
+          onClick={() => setActiveNav("#about")}
+          className={activeNav === "#about" ? "active" : ""}
+        >
+          <p className="p2">ABOUT</p>
+          <AiOutlineUser size={25} />
+        </a>
+        <a
+          href="#experience"
+          onClick={() => setActiveNav("#experience")}
+          className={activeNav === "#experience" ? "active" : ""}
+        >
+          <p className="p2">SKILLS</p>
+          <BiBook size={25} />
+        </a>
+        <a
+          href="#portfolio"
+          onClick={() => setActiveNav("#portfolio")}
+          className={activeNav === "#portfolio" ? "active" : ""}
+        >
+          <p className="p2">PROJECTS</p>
+          <VscProject size={25} />
+        </a>
+        <a
+          href="#contact"
+          onClick={() => setActiveNav("#contact")}
+          className={activeNav === "#contact" ? "active" : ""}
+        >
+          <p className="p2">Contact</p>
+          <RiContactsBookLine size={25} />
+        </a>
+      </nav>
+      <div className={stickynav === "false" ? " stickynav " : "hidden"}>
+        <nav className="jss1">
+          <a
+            href="#home"
+            className={activeNav === "#home" ? "active jssb" : "jssb"}
+          >
+            <AiOutlineHome size={15} />
+            <p className="p1">HOME</p>
+          </a>
+          <a
+            href="#about"
+            onClick={() => setActiveNav("#about")}
+            className={activeNav === "#about" ? "active jssb" : "jssb"}
+          >
+            <AiOutlineUser size={15} />
+            <p className="p1">ABOUT</p>
+          </a>
+          <a
+            href="#experience"
+            onClick={() => setActiveNav("#experience")}
+            className={activeNav === "#experience" ? "active jssb" : "jssb"}
+          >
+            <BiBook size={15} />
+            <p className="p1">SKILLS</p>
+          </a>
+          <a
+            href="#portfolio"
+            onClick={() => setActiveNav("#portfolio")}
+            className={activeNav === "#portfolio" ? "active jssb" : "jssb"}
+          >
+            <VscProject size={15} />
+            <p className="p1">PROJECTS</p>
+          </a>
+          <a
+            href="#contact"
+            onClick={() => setActiveNav("#contact")}
+            className={activeNav === "#contact" ? "active jssb" : "jssb"}
+          >
+            {" "}
+            <RiContactsBookLine size={15} />
+            <p className="p1">Contact</p>
+          </a>
+        </nav>
+      </div>
+    </>
+  );
 }
 
 export default Topbar;

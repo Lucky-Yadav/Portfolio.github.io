@@ -1,6 +1,6 @@
 import React from 'react';
 import IMG1 from '../../assets/swiggy.png';
-import IMG2 from "../../assets/images/portfolio/Unsplash.png";
+import IMG2 from "../../assets/images/portfolio/Apollo.png";
 
 
 import './portfolio.css';
@@ -14,18 +14,18 @@ const Portfolio = () => {
       des: "Swiggy is an Indian online food ordering and delivery platform .",
       res: "My Area of Responsibility :- Create Signup/ Login Algo and also implemented Google oAuth with Mobile No. for Login and stored the data in JSON SERVER.",
       teckStack: " React | Redux | Styled Components |  Material UI ",
-      link: "https://lucky-yadav.github.io/swiggy.com_clone.github.io/",
+      link: "https://swiggy-web-clone.netlify.app/",
       github: "https://github.com/Lucky-Yadav/swiggy.com_clone.github.io",
     },
     {
       id: 2,
-      title: "Unsplash Landing Page Clone",
-      des: "This is Unsplash's Landing page for website,with photos download, add them to favourite and profile card features",
+      title: "Apollo Clone",
+      des: "Apollo Pharmacy is a Medical website , where you can find medicines, consult with doctors online or you can book appointment to meet doctors ofline..",
       img: IMG2,
-      res: "Its feature includes - Drag and Drop search from which a user could search different wallpapers by just dragging or uploading image. ",
-      teckStack: " React | Redux | Styled Components | Material UI",
-      link: "https://unsplashnav.netlify.app/",
-      github: "https://github.com/Parag-Tharani/Unsplash_clone",
+      res: " Area of Responsibilty : Landing page with Navbar & footer ",
+      teckStack: " React | Redux | Vanilla js",
+      link: "https://apollo247-clone.netlify.app/",
+      github: "https://github.com/Bhavisha2801/Apollo_Clone",
     },
   ];
   

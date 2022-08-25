@@ -28,17 +28,24 @@ const Intro = () => {
               <small>50+ Completed Assignments</small>
             </article>
           </div>
-          <p>I'm a Full-Stack developer located who enjoy's to create thoughtful yet beautiful websites with great user experience.
-            <br/><br/>I'm interested in the whole Development Journey Like trying new things and building great projects. I love to write blogs and read books.
-            <br/>I believe everything is an Art when you put your consciousness in it. <br /> <br />
-            <b>HTML, CSS, JavaScript, React, Redux </b> etc. building everything from landing pages to APIs under the guidence of  
+          <p>
+            An independent and detail-oriented full-stack web developer with a
+            specialization in MERN stack. enthusiastic to learn new things and
+            always try to do my best in any work assigned and always tries to be
+            appreciated as well-performer.
+            <br />I believe everything is an Art when you put your consciousness
+            in it. <br /> 
+            <b>HTML, CSS, JavaScript, React, Redux </b> etc. building everything
+            from landing pages to APIs under the guidence of
             <b> MASAI SCHOOL</b> .
           </p>
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <a href="#contact" className="btn btn-primary">
+            Let's Talk
+          </a>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Intro

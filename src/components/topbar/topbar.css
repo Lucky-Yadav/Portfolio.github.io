@@ -2,7 +2,7 @@ nav {
   background: rgba(0, 0, 0, 0.3);
   /* width: max-content; */
   display: block;
-  padding: 0.7rem 1.7rem;
+  padding: 0.2rem 1.7rem;
   text-align: center;
   justify-content: center;
   z-index: 2;
@@ -30,6 +30,49 @@ nav a:hover {
 }
 
 nav a.active {
-  background: var(--color-bg);
+  /* background: var(--color-bg); */
   color: var(--color-white);
+}
+.stickynav {
+      display: flex;
+  backdrop-filter: blur(8px);
+    background: rgba(0,0,0,.3);
+    border-radius: 3rem;
+    bottom: 3rem;
+    display: block;
+    gap: 0.8rem;
+    left: 50%;
+    padding: 0.7rem 1.7rem;
+    position: fixed;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: -webkit-max-content;
+    width: max-content;
+    z-index: 2;
+        border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+}
+.jss1{
+  background: transparent;
+  border-radius: 15px;
+}
+.jssb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 5px;
+}
+.p1 {
+  font-size: x-small;
+}
+.hidden {
+  display: none;
+}
+.navb p {
+  padding-right: 8px;
 }
