@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { MdOutlineEmail } from 'react-icons/md';
+import Linkedinicon from "../../assets/linkedinicon.gif";
 import './contact.css';
 
 const Contact = () => {
@@ -38,7 +39,7 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
+            {/* <Linkedinicon className="contact__option-icon" /> */}
             <h4>Linkedin</h4>
             <h5>Lucky-yadav</h5>
             <a href="https://www.linkedin.com/in/lucky-yadav/">

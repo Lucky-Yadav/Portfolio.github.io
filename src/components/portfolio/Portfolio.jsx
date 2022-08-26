@@ -23,7 +23,7 @@ const Portfolio = () => {
       des: "Apollo Pharmacy is a Medical website , where you can find medicines, consult with doctors online or you can book appointment to meet doctors ofline..",
       img: IMG2,
       res: " Area of Responsibilty : Landing page with Navbar & footer ",
-      teckStack: " React | Redux | Vanilla js",
+      teckStack: " HTML | CSS | Vanilla js",
       link: "https://apollo247-clone.netlify.app/",
       github: "https://github.com/Bhavisha2801/Apollo_Clone",
     },
