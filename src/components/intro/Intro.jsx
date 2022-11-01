@@ -32,7 +32,7 @@ const Intro = () => {
             An independent and detail-oriented full-stack web developer with a
             specialization in MERN stack. enthusiastic to learn new things and
             always try to do my best in any work assigned and always tries to be
-            appreciated as well-performer.
+            appreciated as well-performer. 
             <br />I believe everything is an Art when you put your consciousness
             in it. <br /> 
             <b>HTML, CSS, JavaScript, React, Redux </b> etc. building everything
