@@ -6,4 +6,4 @@
 
 ## Live Demo
 
-- https://paragtharani23.netlify.app
+- https://luckyyadav.netlify.app/
