@@ -6,15 +6,28 @@ import ME from "../../assets/lucky.png";
 import "./intro.css";
 
 const Intro = () => {
+  function startMusic() {
+    document.getElementById("backgroundMusic").play();
+  }
+  function pauseMusic() {
+    document.getElementById("backgroundMusic").pause();
+  }
+
   return (
     <section id="about">
-      <ReactAudioPlayer src="./RabbaMeharKari.mp3" autoPlay></ReactAudioPlayer>
+      <ReactAudioPlayer
+        src="./RabbaMeharKari.mp3"
+        id="backgroundMusic"
+        autoPlay
+        // controls
+      ></ReactAudioPlayer>
       <h5>Get to know</h5>
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__me">
-          <div className="about__me-image">
-            <img src={ME} alt="me" />
+          <div onMouseEnter={() => startMusic()} 
+          onMouseLeave={() => pauseMusic()}>
+            <img src={ME} alt="me" className="about__me-image" />
           </div>
         </div>
         <div className="about__content">

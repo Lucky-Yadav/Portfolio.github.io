@@ -8,6 +8,7 @@ header {
   text-align: center;
   height: 100%;
   position: relative;
+  color: #daa520;
 }
 
 .cta {
@@ -25,6 +26,9 @@ header {
   position: absolute;
   left: 5rem;
   bottom: 1rem;
+}
+.header__socials a {
+  color: #daa520;
 }
 
 .header__socials::after {

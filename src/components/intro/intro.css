@@ -6,26 +6,27 @@
 
 .about__me {
     width: 100%;
-    aspect-ratio: 1/0.86;
+    aspect-ratio: 1/0.6;
     border-radius: 2rem;
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
-    display: grid;
+    /* display: grid; */
     place-items: center;
 }
+.about__me:hover {
+    transform: rotate(360deg);
+}
 
-.about__me-image {
-    
+.about__me-image {    
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(-2deg);
-    transform: rotate3d(1, 5, 1, -30deg);
-    transition: var(--transition);
+    transform: rotate3d(2, 2, 2, 20deg);
+    transition: all 1s ease-in-out;
 }
 
 .about__me-image:hover {
     transform: rotate(0);
 }
-
 
 .about__cards {
     display: grid;

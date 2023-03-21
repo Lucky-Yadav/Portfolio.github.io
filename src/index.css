@@ -43,7 +43,9 @@ body {
   background-color: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  background-image: url(../src/assets/modern-brush-stroke-banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
