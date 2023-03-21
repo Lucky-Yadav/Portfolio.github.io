@@ -1,23 +1,32 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { MdOutlineEmail } from 'react-icons/md';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { MdOutlineEmail } from "react-icons/md";
 import Linkedinicon from "../../assets/linkedinicon.gif";
-import './contact.css';
+import "./contact.css";
 
 const Contact = () => {
   const formRef = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_k2qawqh', 'template_c6rkpn6', formRef.current, 'X7K7ebhIeOy3YwHki')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_k2qawqh",
+        "template_c6rkpn6",
+        formRef.current,
+        "X7K7ebhIeOy3YwHki"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
 
-      e.target.reset();
-  }
+    e.target.reset();
+  };
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -39,7 +48,11 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
-            {/* <Linkedinicon className="contact__option-icon" /> */}
+            <img
+              src={Linkedinicon}
+              alt="Loading..."
+              className="contact__option-icon linkedin_icon"
+            />
             <h4>Linkedin</h4>
             <h5>Lucky-yadav</h5>
             <a href="https://www.linkedin.com/in/lucky-yadav/">
@@ -73,6 +86,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;

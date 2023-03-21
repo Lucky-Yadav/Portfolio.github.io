@@ -1,34 +1,41 @@
-import React, { useState } from 'react';
-import { AiOutlineHome } from 'react-icons/ai';
-import { AiOutlineUser } from 'react-icons/ai';
-import { BiBook } from 'react-icons/bi';
-import { VscProject } from "react-icons/vsc"
+import React, { useState } from "react";
+import { AiOutlineHome } from "react-icons/ai";
+import { AiOutlineUser } from "react-icons/ai";
+import { BiBook } from "react-icons/bi";
+import { VscProject } from "react-icons/vsc";
 // import { RiServiceLine } from 'react-icons/ri';
 // import { BiMessageSquareDetail } from 'react-icons/bi';
-import { RiContactsBookLine } from "react-icons/ri"
+import { RiContactsBookLine } from "react-icons/ri";
 
-
-import './topbar.css';
+import "./topbar.css";
 
 const Topbar = () => {
-  const [activeNav, setActiveNav] = useState('#home');
-  const [stickynav, setstickynav] = useState('true')
+  const [activeNav, setActiveNav] = useState("#home");
+  const [stickynav, setstickynav] = useState("true");
 
   var timeout;
 
   document.onmousemove = function () {
-    if (timeout <= 1000) {
+    if (timeout <= 5000) {
         setstickynav("false")
       }
-      clearTimeout(timeout);
-    
-    
+    clearTimeout(timeout);
+
     timeout = setTimeout(() => {
-        setstickynav("true")
-    }, 4000);
+      setstickynav("true");
+    }, 8000);
   };
-     
-  
+  document.onscroll = function () {
+    if (timeout <= 5000) {
+      setstickynav("false");
+    }
+    clearTimeout(timeout);
+
+    timeout = setTimeout(() => {
+      setstickynav("true");
+    }, 8000);
+  };
+
   return (
     <>
       <nav
@@ -123,6 +130,6 @@ const Topbar = () => {
       </div>
     </>
   );
-}
+};
 
 export default Topbar;

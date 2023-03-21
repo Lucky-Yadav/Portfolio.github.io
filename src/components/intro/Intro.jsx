@@ -1,12 +1,14 @@
-import React from 'react';
-import { FaAward } from 'react-icons/fa';
-import { VscFolderLibrary } from 'react-icons/vsc';
-import ME from '../../assets/lucky.png';
-import './intro.css';
+import React from "react";
+import ReactAudioPlayer from "react-audio-player";
+import { FaAward } from "react-icons/fa";
+import { VscFolderLibrary } from "react-icons/vsc";
+import ME from "../../assets/lucky.png";
+import "./intro.css";
 
 const Intro = () => {
   return (
     <section id="about">
+      <ReactAudioPlayer src="./RabbaMeharKari.mp3" autoPlay></ReactAudioPlayer>
       <h5>Get to know</h5>
       <h2>About Me</h2>
       <div className="container about__container">
@@ -32,9 +34,9 @@ const Intro = () => {
             An independent and detail-oriented full-stack web developer with a
             specialization in MERN stack. enthusiastic to learn new things and
             always try to do my best in any work assigned and always tries to be
-            appreciated as well-performer. 
+            appreciated as well-performer.
             <br />I believe everything is an Art when you put your consciousness
-            in it. <br /> 
+            in it. <br />
             <b>HTML, CSS, JavaScript, React, Redux </b> etc. building everything
             from landing pages to APIs under the guidence of
             <b> MASAI SCHOOL</b> .
@@ -46,6 +48,6 @@ const Intro = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Intro
+export default Intro;

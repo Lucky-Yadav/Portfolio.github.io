@@ -13,7 +13,7 @@
 }
 
 .contact__option {
-    background: var(--color-bg-variant);
+    background: #2C4C9C;
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
@@ -44,7 +44,12 @@
 .contact__option h4 {
     font-weight: 500;
 }
-
+.linkedin_icon {
+    max-width: 14px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 form {
     display: flex;
     flex-direction: column;
