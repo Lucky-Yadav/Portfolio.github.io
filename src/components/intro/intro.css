@@ -20,7 +20,7 @@
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(-2deg);
-    transform: rotate3d(2, 2, 2, 20deg);
+    transform: rotate3d(2, 2, 2, -20deg);
     transition: all 1s ease-in-out;
 }
 

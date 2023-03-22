@@ -54,6 +54,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    color: #24cedb;
 }
 
 input,
@@ -62,10 +63,22 @@ textarea {
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    border: 2px solid #24cedb;
     resize: none;
-    color: var(--color-primary);
+    color: #daa520;    
 }
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #daa520;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: pink;
+  }
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #daa520;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: pink;
+  }
 
 @media screen and (max-width: 1024px){
     .container.contact__container {
